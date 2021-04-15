@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React, {useState} from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 
 export default function App() {
   const [tela,setTela] = useState('menu');
@@ -18,7 +18,19 @@ export default function App() {
     return (
       <View style={styles.container}>
         <StatusBar style="auto" /> 
-        <Text>Menu</Text>
+        <Text style={styles.titulo}>Jogo da Velha</Text>
+        <Text style={styles.subtitulo}>Selecione o primeiro jogador</Text>
+
+        <View style={styles.inLineItems}>
+        <TouchableOpacity style={styles.boxJogador}>
+          <Text style={styles.jogadorX}>X</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity style={styles.boxJogador}>
+          <Text style={styles.jogadorO}>O</Text>
+        </TouchableOpacity>
+        </View>
+        
       </View>
     );
   }
@@ -51,4 +63,35 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+titulo:{
+  fontSize: 30,
+  fontWeight: 'bold',
+  color: '#333'
+},
+subtitulo:{
+  fontSize: 20,
+  color: '#555',
+  marginTop: 20
+},
+boxJogador:{
+  width: 80,
+  height: 80,
+  backgroundColor: '#ddd',
+  alignItems: 'center',
+  justifyContent: 'center',
+  margin: 5
+},
+jogadorX:{
+  fontSize: 40,
+  color: '#553fda'
+},
+jogadorO:{
+  fontSize: 40,
+  color: '#da3f3f'
+},
+inLineItems:{
+  flexDirection:'row'
+}
+
+
 });
