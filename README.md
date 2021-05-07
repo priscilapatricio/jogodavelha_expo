@@ -2,14 +2,14 @@
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-como-rodar">Como rodar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-como-criar-o-projeto">Como criar o projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-como-o-projeto-foi-criado">Como o projeto foi criado</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-como-contribuir">Como contribuir</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-licença">Licença</a>&nbsp;&nbsp;&nbsp;
   </p>
 
 <br>
 
-## 📋 Jogo da Velha com React Native
+## 📋 Jogo da Velha com React Native e Expo
 
 Status do Projeto: Em desenvolvimento :warning:
 
@@ -33,7 +33,7 @@ Instalar todas as dependências indicadas pelo package.json
 Rodar o projeto usando o terminal de comando
 ### expo start
 
-## 💻 Como criar o projeto 
+## 💻 Como o projeto foi criado
 
 Criar o projeto com Expo
 ### expo init
