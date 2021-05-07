@@ -9,9 +9,9 @@
 
 <br>
 
-## 📋 Jogo da Velha com React Native e Expo
+## 📋 Jogo da Velha com React Native
 
-Status do Projeto: Em desenvolvimento :warning:
+Status do Projeto: Concluído :heavy_check_mark:
 
 ## 🚀 Tecnologias
 

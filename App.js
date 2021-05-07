@@ -49,7 +49,7 @@ export default function App() {
 
     //diagonal 2
     if(tabuleiro[0][2] !== '' && tabuleiro[0][2] === tabuleiro[1][1] && tabuleiro[1][1] === tabuleiro[2][0]){
-      return finalizarJogo(tabuleiro[0][0]);
+      return finalizarJogo(tabuleiro[0][2]);
     }
 
     //nenhum ganhador
@@ -147,6 +147,22 @@ export default function App() {
         <Text style={styles.titulo}>Jogo da Velha</Text>
         <Text style={styles.subtitulo}>Resultado final</Text>
 
+        {
+          ganhador === '' && 
+          <Text style={styles.ganhador}>Nenhum ganhador</Text>
+        }
+
+        {
+          ganhador !== '' && 
+          <>
+            <Text style={styles.ganhador}>Ganhador</Text>
+            <View
+              style={styles.boxJogador}>
+              <Text style={ganhador === 'X' ? styles.jogadorX : styles.jogadorO}>{ganhador}</Text>
+            </View>
+          </>
+        }
+
         <TouchableOpacity
           style={styles.botaoMenu}
           onPress={() => setTela('menu')}>
@@ -184,7 +200,7 @@ boxJogador:{
   alignItems: 'center',
   justifyContent: 'center',
   margin: 5,
-  marginTop: 20
+  marginTop: 10
 },
 jogadorX:{
   fontSize: 40,
@@ -201,8 +217,13 @@ botaoMenu:{
   marginTop: 20
 },
 textoBotaoMenu:{
+  fontSize: 17,
   color: '#4e6fe4'
+},
+ganhador:{
+  fontSize: 25,
+  fontWeight: 'bold',
+  color: '#333'
 }
-
 
 });
