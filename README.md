@@ -2,7 +2,8 @@
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-como-rodar">Como rodar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-como-o-projeto-foi-criado">Como o projeto foi criado</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-como-o-projeto-foi-criado">Como o projeto foi criado</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;   
+  <a href="#-build-e-deploy-do-projeto">Build e Deploy do projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-como-contribuir">Como contribuir</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-licença">Licença</a>&nbsp;&nbsp;&nbsp;
   </p>
@@ -37,6 +38,19 @@ Rodar o projeto usando o terminal de comando
 
 Criar o projeto com Expo
 ### expo init
+
+## 👀 Build e Deploy do Projeto
+
+Criar a build do projeto
+### expo build:web
+
+Rodar o site de hospedagem da aplicação
+### netlify login
+
+Fazer o deploy da aplicação
+### netlify deploy --dir web-build
+
+Você pode acessar o projeto através deste [link](https://6095e73c03272f5e220408a1--naughty-wiles-caab34.netlify.app/).
 
 ## 🤔 Como contribuir
 
